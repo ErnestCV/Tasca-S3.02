@@ -1,8 +1,8 @@
-package org.n3ex1;
+package org.n3ex1.client;
 
 import java.math.BigDecimal;
 
-public interface ConsumerService {
+public interface ServiceConsumer {
 
     void processConversion(BigDecimal preu);
 }

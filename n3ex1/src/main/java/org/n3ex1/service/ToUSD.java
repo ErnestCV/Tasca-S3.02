@@ -1,4 +1,4 @@
-package org.n3ex1;
+package org.n3ex1.service;
 
 import java.math.BigDecimal;
 

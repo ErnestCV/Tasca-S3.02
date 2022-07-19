@@ -1,10 +1,12 @@
-package org.n3ex1;
+package org.n3ex1.client;
+
+import org.n3ex1.service.ConverterService;
 
 import java.math.BigDecimal;
 
-public class CurrencyConverter implements ConsumerService{
+public class CurrencyConverter implements ServiceConsumer {
 
-    private ConverterService service;
+    private final ConverterService service;
 
     public CurrencyConverter(ConverterService service) {
         this.service = service;

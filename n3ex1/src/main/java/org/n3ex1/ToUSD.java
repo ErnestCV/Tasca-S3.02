@@ -6,6 +6,6 @@ public class ToUSD implements ConverterService {
 
     @Override
     public void convert(BigDecimal preu) {
-        System.out.println("Preu en USD: " + preu.multiply(new BigDecimal("1.2")));
+        System.out.println("Preu en USD: " + preu.multiply(new BigDecimal("1.02")));
     }
 }

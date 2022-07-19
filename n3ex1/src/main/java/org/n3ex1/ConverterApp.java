@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 
 public class ConverterApp {
 
-    private BigDecimal preu;
-    private String moneda;
+    private final BigDecimal preu;
+    private final String moneda;
 
     public ConverterApp(BigDecimal preu, String moneda) {
         this.preu = preu;
@@ -15,8 +15,10 @@ public class ConverterApp {
     public void run() {
         ConversioMonedaInjector injector;
         injector = new ToUSDConversioMonedaInjector();
+
         ConsumerService app;
         app = injector.getConsumerService();
+
         app.processConversion(preu);
     }
 }

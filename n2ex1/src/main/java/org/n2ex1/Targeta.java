@@ -1,17 +1,17 @@
 package org.n2ex1;
 
-public class Targeta implements Callback{
+import java.math.BigDecimal;
 
-//    private Botiga botiga;
-//
-//    public Targeta(Botiga botiga) {
-//        this.botiga = botiga;
-//    }
+public class Targeta implements Pagament {
+
+    private final BigDecimal preu;
+
+    public Targeta(BigDecimal preu) {
+        this.preu = preu;
+    }
 
     @Override
-    public void pagament() {
-        System.out.println("Pagament - callback");
+    public void processa() {
+        System.out.println("Fent un càrrec de " + preu + " a la targeta...");
     }
 }
-
-

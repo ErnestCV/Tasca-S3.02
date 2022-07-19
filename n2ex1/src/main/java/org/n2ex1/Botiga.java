@@ -2,14 +2,12 @@ package org.n2ex1;
 
 public class Botiga {
 
-    //Botiga és el Caller
-
-    public Botiga() {
-
+    public void processaPagament(Pagament pagament) {
+        Passarela passarela = new Passarela(this, pagament);
+        passarela.execute();
     }
 
-    public void passaPagament(Callback callback) {
-        callback.pagament();
+    public void postPagament() {
+        System.out.println("Pagament realitzat correctament.");
     }
-
 }

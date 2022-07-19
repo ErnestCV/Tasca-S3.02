@@ -9,6 +9,7 @@
         <module name="n2ex1" />
         <module name="n1ex1" />
         <module name="n1ex1_v2" />
+        <module name="n3ex1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

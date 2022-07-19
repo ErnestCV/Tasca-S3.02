@@ -1,9 +1,17 @@
 package org.n2ex1;
 
+import org.n2ex1.metodePagament.MetodePagament;
+
 public class Botiga {
 
-    public void processaPagament(Pagament pagament) {
-        Passarela passarela = new Passarela(this, pagament);
+    private final String nom;
+
+    public Botiga(String nom) {
+        this.nom = nom;
+    }
+
+    public void processaPagament(MetodePagament metodePagament) {
+        Passarela passarela = new Passarela(this, metodePagament);
         passarela.execute();
     }
 

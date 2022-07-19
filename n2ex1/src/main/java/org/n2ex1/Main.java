@@ -5,15 +5,9 @@ import java.math.BigDecimal;
 public class Main {
     public static void main(String[] args) {
 
-        String metodePagament = "Targeta"; //TODO triar mètode
         BigDecimal preu = new BigDecimal("79.99");
+        Botiga botiga = new Botiga("Botiga de sabates");
 
-        Botiga botiga = new Botiga();
-        Pagament pagament = new Targeta(preu);
-
-        botiga.processaPagament(pagament);
-
-        //TODO revisar procés callback
-
+        botiga.processaPagament(SelectorPagament.selectorPagament(preu));
     }
 }

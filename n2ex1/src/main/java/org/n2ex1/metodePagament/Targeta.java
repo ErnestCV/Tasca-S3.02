@@ -1,8 +1,8 @@
-package org.n2ex1;
+package org.n2ex1.metodePagament;
 
 import java.math.BigDecimal;
 
-public class Targeta implements Pagament {
+public class Targeta implements MetodePagament {
 
     private final BigDecimal preu;
 
